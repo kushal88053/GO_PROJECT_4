@@ -44,7 +44,6 @@ func validateEmailHandler(w http.ResponseWriter, r *http.Request) {
 		DomainOK:  domainOK,
 		FullValid: isValid && domainOK,
 	}
-
 	json.NewEncoder(w).Encode(resp)
 }
 
